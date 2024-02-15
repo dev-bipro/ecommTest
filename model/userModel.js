@@ -13,6 +13,9 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  otpForVerify: {
+    type: String,
+  },
 });
 
 module.exports = mongoose.model("user", userSchema);
